@@ -2,14 +2,14 @@
 
 <hr>
 
-<h4>Users</h4>
-<ul>
+<h4>User List</h4>
+<ul class="list-group">
   <% @users.each do |u| %>
-    <li><%= u.fname %> <%= u.lname %></li>
+    <li class="list-group-item">
+      <strong><%= u.fname %> <%= u.lname %></strong>
+      <% unless current_user == u %>
+        <%= link_to "Add Friend", friendships_path(:friend_id => u), :method => :post %>
+      <% end %>
+    </li>
   <% end %>
 </ul>
-
-
-<% if user_signed_in? %>
-  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-<% end %>
