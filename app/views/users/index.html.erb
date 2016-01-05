@@ -1,0 +1,15 @@
+<h1>Home Page</h1>
+
+<hr>
+
+<h4>Users</h4>
+<ul>
+  <% @users.each do |u| %>
+    <li><%= u.fname %> <%= u.lname %></li>
+  <% end %>
+</ul>
+
+
+<% if user_signed_in? %>
+  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+<% end %>

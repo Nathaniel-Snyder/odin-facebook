@@ -1,0 +1,21 @@
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <%= link_to "odin-facebook", root_path, :class => "navbar-brand" %>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <% if user_signed_in? %>
+      <ul class="nav navbar-nav">
+        <li><%= link_to "Profile", user_path(current_user) %></li>
+        <li><a href="#contact">Notifications</a></li>
+      </ul>
+      <% end %>
+      <% if user_signed_in? %>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
+          </li>
+        </ul>
+      <% end %>
+  </div>
+</nav>
