@@ -1,6 +1,6 @@
 == odin-facebook
 
-<h3>The Odin Project's Ruby on Rails Course</h3>
+==== The Odin Project's Ruby on Rails Course
 
 *Lesson:* Final Project, can be found at http://www.theodinproject.com/ruby-on-rails/final-project
 
