@@ -1,19 +1,15 @@
-== README
-
-=== odin-facebook
+== odin-facebook
 
 <h3>The Odin Project's Ruby on Rails Course</h3>
 
 *Lesson:* Final Project, can be found at http://www.theodinproject.com/ruby-on-rails/final-project
 
 *Objective:* Make a facebook-clone with the following functionality:
-<ul>
-  <li>New user registration</li>
-  <li>Sign-in with Facebook</li>
-  <li>Send and accept friend requests</li>
-  <li>Publish posts</li>
-  <li>Like and comment on posts</li>
-</ul>
+*   New user registration
+*   Sign-in with Facebook
+*   Send and accept friend requests
+*   Publish posts
+*   Like and comment on posts
 ---
 
 Ruby version: 2.2.1
